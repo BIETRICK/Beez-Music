@@ -1,0 +1,1034 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    padding: 5px;
+}
+nav{
+    background: #006cff;
+    height: 90px;
+    width: 100%;
+}
+
+
+.logoimage{
+    background: #000000;
+    text-align: center;
+}
+.logoimage img{
+    height: 90px;
+    width: 100px;
+}
+label.logo{
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 80px;
+    padding-left: 10px;
+    font-weight: 600;
+}
+.checkbtn{
+    font-size: 20px;
+    color: #ffffff;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #ffffff;
+    padding: 7px 13px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav a.active, nav a:hover{
+    background: #4794ff;
+    transition: .5s;
+}
+
+.gotop{
+    background: url(gotop.png);
+    height:100px;
+    width: 100px;
+    background-size: cover;
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+}
+@media all and (max-width:500px) {
+    .gotop{
+        height:30px;
+        width: 30px;
+        background-size: cover;
+        position: fixed;
+        right: 10px;
+        bottom: 40px;
+    }
+}
+
+.topbox{
+    background: #f3f3f3;
+    width: 1000px;
+    height: 100%;
+    margin-left: 450px;
+    margin-top: 20px;
+    padding-top: 45px;
+    border-radius: 20px;  
+}
+
+
+@media all and (max-width:500px) {
+    .topbox{
+        width: 360px;
+        margin-left:0px;
+        border-radius: 0px;
+    }
+}
+
+
+.topbox h2{
+    color: #006cff;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+@media all and (max-width:500px) {
+    .topbox h2{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+}
+
+.topbox h5{
+    color: #006cff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;  
+}
+@media all and (max-width:500px) {
+    .topbox h5{
+        font-size: 15px; 
+    }
+}
+.topbox .topimage img{
+    margin-left: 50px;
+    width: 900px;
+    height: 600px;
+    padding: 10px;
+    border-radius: 20px;
+}
+@media all and (max-width:500px) {
+    .topbox .topimage img{
+        margin-left: 0px;
+        width: 100%;
+        height: 230px;
+        border-radius: 0px;
+        padding-top: 0px;
+    }
+}
+.topbox p{
+    padding: 10px;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;  
+}
+@media all and (max-width:500px) {
+    .topbox p{
+        padding: 2px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size:12px;
+    }
+}
+
+
+/*music 1111  page*/
+
+.musicpage{
+    background: #006cff;
+    width: 1000px;
+    height: 100%;
+    margin-left: 450px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+@media all and (max-width:500px) {
+    .musicpage{
+        width: 360px;
+        height: 100%;
+        margin-left: 0px;
+        border-radius: 0px;
+    }
+}
+
+.musicpage h1{
+    text-align: center;
+    font-weight: 500;
+    margin-top: 80px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+@media all and (max-width:500px) {
+    .musicpage h1{
+        margin-top: 20px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+}
+
+.musicpage .container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.musicpage .card{
+    background: #f1f3f4;
+    border-radius: 20px;
+    width: 250px;
+    height: 270px;
+    margin: 20px;
+    text-align: center;
+}
+@media all and (max-width:500px) {
+    .musicpage .card{
+        border-radius: 10px;
+        width: 150px;
+        height: 170px;
+        margin: 10px;
+    }
+}
+
+.musicpage .cardimage{
+    background-color: #ff3c6a;
+    border-radius: 20px 20px 0 0;
+    height: 150px;
+    margin-bottom: 5px;
+    background-size: cover;
+    background-image: url(1.jpg);
+}
+@media all and (max-width:500px) {
+    .musicpage .cardimage{
+        background-color: #ff3c6a;
+        border-radius: 10px 10px 0 0;
+        height: 80px; 
+    }
+}
+
+.musicpage .card h2{
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+@media all and (max-width:500px) {
+    .musicpage .card h2{
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+}
+
+.musicpage .card a{
+    font-size: 15px;
+    padding: 3px 10px;
+    background-color: #01727c;
+    color: #fff;
+    text-decoration: none; 
+    border-radius: 5px;  
+}
+@media all and (max-width:500px) {
+    .musicpage .card a{
+        background-color: #01727c;
+        color: #fff;
+        text-decoration: none; 
+        border-radius: 4px;   
+    }
+}
+
+.musicpage .card audio{
+    width: 100%;
+    height: 40px; 
+    margin-top: 4px;   
+}
+@media all and (max-width:500px) {
+    .musicpage .card audio{
+        width: 100%;
+        height:20px; 
+        margin-top: 8px;   
+    }
+}
+
+
+/*music 2222  page*/
+
+.musicpage2{
+    background: #005851;
+    width: 1000px;
+    height: 100%;
+    margin-left: 450px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+@media all and (max-width:500px) {
+    .musicpage2{
+        width: 360px;
+        height: 100%;
+        margin-left: 0px;
+        border-radius: 0px;
+    }
+}
+
+.musicpage2 h1{
+    text-align: center;
+    font-weight: 500;
+    margin-top: 80px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+@media all and (max-width:500px) {
+    .musicpage2 h1{
+        margin-top: 20px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+}
+
+.musicpage2 .container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.musicpage2 .card{
+    background: #f1f3f4;
+    border-radius: 20px;
+    width: 250px;
+    height: 270px;
+    margin: 20px;
+    text-align: center;
+}
+@media all and (max-width:500px) {
+    .musicpage2 .card{
+        border-radius: 10px;
+        width: 150px;
+        height: 170px;
+        margin: 10px;
+    }
+}
+
+.musicpage2 .cardimage{
+    background-color: #ff3c6a;
+    border-radius: 20px 20px 0 0;
+    height: 150px;
+    margin-bottom: 5px;
+    background-size: cover;
+    background-image: url(2.jpg);
+}
+@media all and (max-width:500px) {
+    .musicpage2 .cardimage{
+        background-color: #ff3c6a;
+        border-radius: 10px 10px 0 0;
+        height: 80px; 
+    }
+}
+
+.musicpage2 .card h2{
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+@media all and (max-width:500px) {
+    .musicpage2 .card h2{
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+}
+
+.musicpage2 .card a{
+    font-size: 15px;
+    padding: 3px 10px;
+    background-color: #01727c;
+    color: #fff;
+    text-decoration: none; 
+    border-radius: 5px;   
+}
+@media all and (max-width:500px) {
+    .musicpage2 .card a{
+        background-color: #01727c;
+        color: #fff;
+        text-decoration: none; 
+        border-radius: 4px;   
+    }
+}
+
+.musicpage2 .card audio{
+    width: 100%;
+    height: 40px; 
+    margin-top: 4px;   
+}
+@media all and (max-width:500px) {
+    .musicpage2 .card audio{
+        width: 100%;
+        height:20px; 
+        margin-top: 8px;   
+    }
+}
+
+
+
+
+/*music 3333  page*/
+
+.musicpage3{
+    background: #33000d;
+    width: 1000px;
+    height: 100%;
+    margin-left: 450px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+@media all and (max-width:500px) {
+    .musicpage3{
+        width: 360px;
+        height: 100%;
+        margin-left: 0px;
+        border-radius: 0px;
+    }
+}
+
+.musicpage3 h1{
+    text-align: center;
+    font-weight: 500;
+    margin-top: 80px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+@media all and (max-width:500px) {
+    .musicpage3 h1{
+        margin-top: 20px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+}
+
+.musicpage3 .container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.musicpage3 .card{
+    background: #f1f3f4;
+    border-radius: 20px;
+    width: 250px;
+    height: 270px;
+    margin: 20px;
+    text-align: center;
+}
+@media all and (max-width:500px) {
+    .musicpage3 .card{
+        border-radius: 10px;
+        width: 150px;
+        height: 170px;
+        margin: 10px;
+    }
+}
+
+.musicpage3 .cardimage{
+    background-color: #ff3c6a;
+    border-radius: 20px 20px 0 0;
+    height: 150px;
+    margin-bottom: 5px;
+    background-size: cover;
+    background-image: url(3.jpg);
+}
+@media all and (max-width:500px) {
+    .musicpage3 .cardimage{
+        background-color: #ff3c6a;
+        border-radius: 10px 10px 0 0;
+        height: 80px; 
+    }
+}
+
+.musicpage3 .card h2{
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+@media all and (max-width:500px) {
+    .musicpage3 .card h2{
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+}
+
+.musicpage3 .card a{
+    font-size: 15px;
+    padding: 3px 10px;
+    background-color: #01727c;
+    color: #fff;
+    text-decoration: none; 
+    border-radius: 5px;   
+}
+@media all and (max-width:500px) {
+    .musicpage3 .card a{
+        background-color: #01727c;
+        color: #fff;
+        text-decoration: none; 
+        border-radius: 4px;   
+    }
+}
+
+.musicpage3 .card audio{
+    width: 100%;
+    height: 40px; 
+    margin-top: 4px;   
+}
+@media all and (max-width:500px) {
+    .musicpage3 .card audio{
+        width: 100%;
+        height:20px; 
+        margin-top: 8px;   
+    }
+}
+
+
+
+
+
+
+
+/*contact page*/
+.contactpage{
+    background: #eeeeee;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    width: 1000px;
+    height: 100%;
+    margin-left: 450px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+@media all and (max-width:500px) {
+    .contactpage{
+        padding: 30px;
+        width: 360px;
+        margin-left: 0px;
+        border-radius: 0px;
+        padding: 5px;
+        margin-top: 20px;
+    }
+}
+
+.contactpage .heading h2{
+    color:#006cff ;
+    
+}
+
+.contactpage .fullbox .heading p{
+    color:#006cff ;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+@media all and (max-width:500px) {
+    .contactpage .fullbox .heading p{
+        color:#006cff ;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+}
+
+.contactpage .fullbox .heading h2{
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+
+.contactpage .fullbox .heading p{
+    font-size: 20px;  
+}
+@media all and (max-width:500px) {
+    .contactpage .fullbox .heading p{
+        font-size: 12px;  
+    }
+}
+
+.contactpage .formborder{
+    background: #ffffff;
+    height: 100%;
+    width: 700px;
+    border-radius: 20px;
+    margin-left: 120px;
+    padding-right: 90px;
+    padding-left:90px ;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+}
+@media all and (max-width:500px) {
+    .contactpage .formborder{
+        height: 100%;
+        width: 350px;
+        border-radius: 0px;
+        margin-left: 0px;
+        padding-right: 20px;
+        padding-left:20px ;
+    }
+}
+
+.contactpage .formborder h3{
+    font-weight: 400;
+    color:#006cff ;
+    padding-bottom: 20px;
+}
+
+.contactpage .field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 0.5px solid ;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+@media all and (max-width:500px) {
+    .contactpage .field{
+        font-size: 12px;
+    }
+}
+.contactpage .field:hover{
+    background: #e9e9e9;
+}
+.contactpage .field:focus{
+    border-color:#006cff ;
+    background: #dfecff;
+}
+.contactpage .area{
+    min-height: 150px;
+    max-height: 200px;
+}
+.contactpage .btn{
+    width: 100%;
+    padding:1rem;
+    background: #f5f5f5;
+    font-size: 1.1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+@media all and (max-width:500px) {
+    .contactpage .btn{
+        padding: 0.5rem;
+        background: #d6d6d6;
+        font-size: 15px;
+    }
+}
+.contactpage .btn:hover{
+    background: #eeeeee;
+    color: #006cff;
+}
+
+.contactpage .bottomdetails{
+    display: inline-flex;
+    background: #ffffff;
+    height: 100%;
+    width: 700px;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 20px;
+}
+@media all and (max-width:500px) {
+    .contactpage .bottomdetails{
+        display: grid;
+        width: 350px;
+        border-radius: 0px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
+.contactpage .bottomdetails .address{
+    background: #eeeeee;
+    height: 170px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+@media all and (max-width:500px) {
+    .contactpage .bottomdetails .address{
+        height: 130px;
+        width: 310px;
+        border-radius: 0px;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+.contactpage .bottomdetails .phone{
+    background: #eeeeee;
+    height: 170px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+@media all and (max-width:500px) {
+    .contactpage .bottomdetails .phone{
+        height: 130px;
+        width: 310px;
+        border-radius: 0px;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+.contactpage .bottomdetails .email{
+    background: #eeeeee;
+    height: 170px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+@media all and (max-width:500px) {
+    .contactpage .bottomdetails .email{
+        height: 130px;
+        width: 310px;
+        border-radius: 0px;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+.contactpage .bottomdetails i{
+    margin-bottom: 5px;
+    color:#006cff ;
+}
+.contactpage .bottomdetails .topic{
+    margin-bottom: 15px;
+    color:#006cff ;
+}
+
+
+
+
+
+
+/* about page */
+.aboutpage{
+    background: #eeeeee;
+    width: 1000px;
+    height: 100%;
+    margin-left: 450px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+@media all and (max-width:500px) {
+    .aboutpage{
+        width: 360px;
+        margin-left: 0px;
+        border-radius: 0px;
+        padding-bottom: 20px;
+        text-align: center;
+        padding: 30px;
+        margin-top: 40px;
+    }
+}
+
+.aboutpage h1{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+@media all and (max-width:500px) {
+    .aboutpage h1{
+        font-size: 20px;
+    }
+}
+.aboutpage .bot {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+}
+@media all and (max-width:500px) {
+    .aboutpage .bot {
+        padding: 8px;
+        border-radius: 0px;
+    }
+}
+.bot img{
+    height: 150px;
+    width: 150px;
+}
+@media all and (max-width:500px) {
+    .bot img{
+        height:80px;
+        width: 80px;
+    }
+}
+.bot p{
+    font-size: 18px;
+    text-align: justify;
+}
+@media all and (max-width:500px) {
+    .bot p{
+        font-size: 12px;
+        text-align: justify;
+    }
+}
+.bot h2{
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+} 
+@media all and (max-width:500px) {
+    .bot h2{
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+}
+.bot a{
+    padding: 10px 20px;
+    background: #dd0000;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 50px;  
+    font-size: 15px; 
+}
+@media all and (max-width:500px) {
+    .bot a{
+        padding: 5px 10px;
+        font-size: 12px;    
+    }
+}
+.bot a:hover{
+    background: #ff0000;
+}
+
+
+
+
+
+
+.footer{
+    background-color: #000000;
+    color: #ffffff;
+    height: 12rem;
+    text-align: center;
+    padding: 40px;
+    margin-top: 2rem;
+}
+@media all and (max-width:500px) {
+    .footer{
+        height: 11rem;
+        text-align: center;
+        padding: 40px;
+        margin-top: 2rem;
+    }
+}
+
+.footer .socials{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #ffffff;
+}
+
+
+.footer .socials a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ffffff ;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 5px;
+    opacity: 0.75;
+}
+
+
+.footer .socials a:hover{
+    opacity: 1;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+@media all and (max-width:500px) {
+    .footer ul{
+        margin-top: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 12px;
+        line-height: 1;
+    }
+}
+
+.footer ul li a{
+    opacity: 0.5;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding:0 15px ;
+}
+@media all and (max-width:500px) {
+    .footer ul li {
+        display: inline-block;
+        padding:0 8px ;
+    }
+}
+
+.footer ul li a:hover{
+    opacity: 1;
+}
+
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #ffffff;
+    opacity: 0.5;  
+}
+@media all and (max-width:500px) {
+    .footer .copyright{
+        margin-top: 15px;
+        font-size: 11px;  
+    }
+}
+
+
+
+/* media queries*/
+
+@media all and (max-width:500px) {
+    
+
+    .container{
+        padding: 0px;
+    }
+
+    nav{
+        background: #006cff;
+        height: 40px;
+        width: 100%;
+        text-align: center;
+    }
+    .logoimage{
+        background: #000000;
+        text-align: center;
+    }
+    .logoimage img{
+        height: 30px;
+        width: 30px;
+    }
+    label.logo{
+        font-size: 15px;
+        line-height: 40px; 
+        margin-left:22px;
+    }
+    .checkbtn{
+        display: block;
+    }
+
+    nav ul{
+        position:absolute;
+        width: 100%;
+        height: 200px;
+        background: #001f4b;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display:block;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 12px;
+        
+        
+    }
+    nav a.active, nav a:hover{
+        background: none;
+        color: rgb(0, 255, 242);
+        padding: 0px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+
+
+
+
+    
+
+}
+
